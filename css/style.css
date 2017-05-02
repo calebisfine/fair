@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'walsheim';
+  src: url("../fonts/gt-walsheim-web.eot");
+  src: url("../fonts/gt-walsheim-web.otf") format("opentype");
+  src: url("../fonts/gt-walsheim-web.ttf") format("truetype"); }
+@font-face {
+  font-family: 'larish-alte';
+  src: url("../fonts/larishalte-semibold-webfont.woff");
+  src: url("../fonts/larishalte-semibold-webfont.woff2") format("woff2"); }
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "walsheim", sans-serif;
+  font-size: 100%;
+  background-color: #112222;
+  text-align: center;
+  color: #FFF; }
+
+header, section, footer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+header {
+  justify-content: top; }
+
+.intro {
+  background-color: #FFF;
+  background-image: url(../img/hand-raised.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #9B12FE; }
+
+.examples {
+  background-color: #5A00FF; }
+
+.examples-blurb {
+  width: 80%;
+  max-width: 800px;
+  text-align: left; }
+
+.examples-heading {
+  color: #FF00FF;
+  margin-bottom: 2em; }
+
+.examples-list {
+  column-count: 2;
+  column-gap: 2em; }
+
+.examples-item {
+  margin-bottom: 2em; }
+
+.examples-keyword {
+  color: #FF00FF; }
+
+.why-intro {
+  background-color: #FFF;
+  min-height: 0;
+  height: 50vh;
+  color: #9B12FE; }
+
+.why-illustrations {
+  flex-direction: row;
+  align-content: stretch;
+  align-items: stretch; }
+
+.why-legos, .why-dollhouse {
+  flex: 1; }
+
+.why-legos {
+  background-color: #5A00FF; }
+
+.why-dollhouse {
+  background-color: #FF00FF; }
+
+.why-outro {
+  background-color: #9B12FE;
+  color: #FFF;
+  min-height: 0;
+  height: 50vh; }
+
+h1, h3, h4 {
+  font-family: larish-alte, serif; }
+
+.title {
+  position: relative;
+  width: 100%;
+  padding-bottom: 4em; }
+
+.blurb {
+  max-width: 500px; }
+
+h1 {
+  font-size: 11vh;
+  color: #9B12FE;
+  line-height: 1.8em; }
+
+h2 {
+  position: absolute;
+  top: 3.5em;
+  font-size: 3vh;
+  line-height: 20vh;
+  margin: 0 auto;
+  width: 100%; }
+
+h3 {
+  font-size: 4em;
+  line-height: 1.2em; }
+
+h4 {
+  font-size: 2em;
+  margin-bottom: .5em; }
+
+p, li {
+  font-size: 1.5em;
+  line-height: 1.2em; }
+
+/*# sourceMappingURL=style.css.map */

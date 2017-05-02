@@ -1,0 +1,32 @@
+// Colors
+
+$dark: #112222;
+$violet: #9B12FE;
+$cobalt: #5A00FF;
+$pink: #FF00FF;
+$white: #FFF;
+
+
+// Spacing
+
+
+// Font Management
+
+$display-font: larish-alte, serif;
+$text-font: 'walsheim', sans-serif;
+
+@font-face {
+	font-family: 'walsheim';
+	src: url('../fonts/gt-walsheim-web.eot');
+    src: url('../fonts/gt-walsheim-web.otf')
+         format('opentype'); 
+    src: url('../fonts/gt-walsheim-web.ttf')
+         format('truetype'); 
+}
+
+@font-face {
+	font-family: 'larish-alte';
+	src: url('../fonts/larishalte-semibold-webfont.woff');
+    src: url('../fonts/larishalte-semibold-webfont.woff2')
+         format('woff2');
+}

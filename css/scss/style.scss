@@ -1,0 +1,142 @@
+@import 'reset';
+@import 'config';
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: $text-font;
+    font-size: 100%;
+    background-color: $dark;
+    text-align: center;
+    color: $white;
+}
+
+.full-card {
+    
+}
+
+header, section, footer {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    justify-content: top; 
+}
+
+#intro {
+    background-color: $white;
+    background-image: url(../img/hand-raised.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $violet;
+}
+
+#examples {
+    background-color: $cobalt;
+}
+
+.examples-blurb {
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.examples-heading {
+    color: $pink;
+    margin-bottom: 2em;
+}
+
+.examples-list {
+    column-count: 2;
+    column-gap: 2em;
+}
+
+.examples-item {
+    margin-bottom: 2em;
+}
+
+.examples-keyword {
+    color: $pink;
+}
+
+.why-intro {
+    background-color: $white;
+    min-height: 0;
+    height: 50vh;
+    color: $violet;
+}
+
+.why-illustrations {
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.why-legos, .why-dollhouse {
+    flex: 1;
+}
+
+.why-legos {
+    background-color: $cobalt;
+}
+
+.why-dollhouse {
+    background-color: $pink;
+}
+
+.why-outro {
+    background-color: $violet;
+    color: $white;
+    min-height: 0;
+    height: 50vh;
+}
+
+h1, h3, h4 {
+    font-family: $display-font;
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    padding-bottom: 4em;
+}
+
+.blurb {
+    max-width: 500px;
+}
+
+h1 {
+//    position: absolute;
+    font-size: 11vh;
+    color: $violet;
+    line-height: 1.8em;    
+}
+
+h2 {
+    position: absolute;
+    top: 3.5em;
+    font-size: 3vh;
+    line-height: 20vh;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h3 {
+    font-size: 4em;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+p, li {
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
