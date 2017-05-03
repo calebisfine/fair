@@ -16,9 +16,9 @@
 		<header>
             <div class="title">
                 <h1>
-                    A Short Guide<br>
-                    to Fair &amp; Healthy<br>
-                    Group<br>
+                    A<br>
+                    Short Guide<br>
+                    to Fair<br>
                     Discussions
                 </h1>
                 <h2>
@@ -32,13 +32,28 @@
 		
 		<section class="intro">
             <div class="blurb">
-                <h4>Discussions are Unfair</h4>
-                <p class="section-intro">Straight, white, cisgender men speak louder, sooner, and more often than their peers of other genders and identities.</p>
+                <h4>Life is Unfair</h4>
+                <p class="section-intro">Straight, white, cisgender men speak louder and more often than their peers of other genders and identities.</p>
+            </div>
+            <div class="intro-stat">
+                <div class="donut-chart volunteer">
+                    <svg class="donut-chart-svg" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                     <g>
+                      <title>Layer 1</title>
+                      <circle id="circle-bg" class="circle_animation-bg" r="60" cy="81" cx="81" stroke-width="18" stroke="#5A00FF" fill="none"/>   
+                      <circle id="circle" class="circle_animation" r="60" cy="81" cx="81" stroke-width="18" stroke="#FF00FF" fill="none"/>
+                     </g>
+                    </svg>
+                </div>
+                <div class="chart-info">
+                    <p class="chart-description">Men are 50% more likely than women to volunteer at least one comment during a college class.</p>
+                    <a class="chart-button" id="chart-buttot">See for Yourself</a>
+                </div>
             </div>
 		</section>
 		<section class="examples">
             <div class="examples-blurb">
-                <h4 class="examples-heading">Other Examples</h4>
+                <h4 class="examples-heading">Other Microagressions</h4>
                 <ul class="examples-list">
                     <li class="examples-item"><span class="examples-keyword">Racing to answer</span> a question first without giving others an opportunity</li>
                     <li class="examples-item"><span class="examples-keyword">Receiving praise</span> for an answer or observation that someone else already shared</li>
@@ -68,14 +83,39 @@
 		</section>
 		<section class="seize">
                 <h3>Why are you seizing<br> this moment?</h3>
+                <div class="ball"></div>
 		</section>
         <section class="seize-content">
             <div class="blurb">
-                <h4>Why are you sezing this moment?</h4>
-                <p class="section-intro">When you feel comeplled to interupt or add to a conversation, ask yourself why:</p>
+                <h4>Why are you<br>sezing this moment?</h4>
+                <p class="section-intro">When you feel comeplled to<br> interupt or add to a conversation, <br>ask yourself why:</p>
+            </div>
+            <div class="seize-reasons">
+                <div class="seize-reason-container">
+                    <p class="seize-reason seize-reason-bad">
+                        I'm an expert and it feels good to be right.
+                    </p>
+                </div>
+                <div class="seize-reason-container">
+                    <p class="seize-reason seize-reason-good">
+                        Others will appreciate what I have to say.
+                    </p>
+                </div>
             </div>
 		</section>
-        
+        <section class="good-time">
+            <div class="blurb">
+                <h4>Is now a good time?</h4>
+                <p class="section-intro">Before speaking, make sure someone else isn’t being ignored &mdash; especially if their experience with the topic is more relevant than yours.</p>
+            </div>
+            <div class="flowchart">
+            <div class="flowchart-cell">Does this need to be said?</div>
+            <div class="flowchart-arrow"></div>
+            <div class="flowchart-cell">Does this need to be said by ME?</div>
+            <div class="flowchart-arrow"></div>
+            <div class="flowchart-cell">Does this need to be said by me NOW?</div>
+            </div>
+        </section>
 		
         
 		<footer>
@@ -85,8 +125,11 @@
 
 	<!-- THIS IS INCLUDED AT THE BOTTOM TO ALLOW CONTENT TO LOAD BEFORE SCRIPTS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pleasejs/0.4.2/Please.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script src="js/scripts.js"></script>
+    <script src="js/balls.js"></script>
 
 </body>
 

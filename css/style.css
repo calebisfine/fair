@@ -74,8 +74,45 @@ header, section, footer {
   flex-direction: column;
   justify-content: center; }
 
+h1, h3, h4 {
+  font-family: larish-alte, serif; }
+
+.blurb {
+  max-width: 500px; }
+
+h1 {
+  font-size: 11vh;
+  color: #9B12FE;
+  line-height: 1.8em; }
+
+h2 {
+  position: absolute;
+  top: 3.5em;
+  font-size: 3vh;
+  line-height: 20vh;
+  margin: 0 auto;
+  width: 100%; }
+
+h3 {
+  font-size: 4em;
+  line-height: 1.2em; }
+
+h4 {
+  font-size: 2em;
+  margin-bottom: .5em;
+  line-height: 1.3em; }
+
+p, li {
+  font-size: 1.5em;
+  line-height: 1.4em; }
+
 header {
   justify-content: top; }
+
+.title {
+  position: relative;
+  width: 100%;
+  padding-bottom: 4em; }
 
 .intro {
   background-color: #FFF;
@@ -83,6 +120,51 @@ header {
   background-size: cover;
   background-position: center;
   color: #9B12FE; }
+
+.intro-stat {
+  padding: 2em;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 450px;
+  border-radius: .3em; }
+
+.donut-chart-svg {
+  transform: rotate(-100deg);
+  animation: donutrotate 600ms ease forwards; }
+
+.circle_animation {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  -webkit-animation: volunteer 600ms ease-in forwards;
+  animation: volunteer 600ms ease forwards; }
+
+@-webkit-keyframes volunteer {
+  to {
+    stroke-dashoffset: 345; } }
+@keyframes volunteer {
+  to {
+    stroke-dashoffset: 345; } }
+@keyframes donutrotate {
+  to {
+    transform: rotate(-90deg); } }
+.chart-info {
+  padding: 1em 0;
+  margin-left: 1em;
+  color: #5A00FF;
+  text-align: left; }
+
+.chart-description {
+  font-size: .9em;
+  margin-bottom: 2em; }
+
+.chart-button {
+  font-size: .9em;
+  padding: .5em;
+  border: 1px solid #5A00FF;
+  border-radius: .3em;
+  cursor: pointer; }
 
 .examples {
   background-color: #5A00FF; }
@@ -97,6 +179,7 @@ header {
   margin-bottom: 2em; }
 
 .examples-list {
+  font-size: .8em;
   column-count: 2;
   column-gap: 2em; }
 
@@ -132,40 +215,56 @@ header {
   min-height: 0;
   height: 50vh; }
 
-h1, h3, h4 {
-  font-family: larish-alte, serif; }
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: none;
+  display: block;
+  position: absolute; }
 
-.title {
-  position: relative;
-  width: 100%;
-  padding-bottom: 4em; }
+.seize-reasons {
+  margin-top: 4em;
+  max-width: 750px;
+  background-color: yellow; }
 
-.blurb {
-  max-width: 500px; }
+.seize-reason-container {
+  display: block;
+  float: left;
+  padding: 4em;
+  width: 50%;
+  text-align: left; }
 
-h1 {
-  font-size: 11vh;
-  color: #9B12FE;
-  line-height: 1.8em; }
+.seize-reason {
+  display: inline;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #FFF;
+  border-bottom: 1px solid #5A00FF; }
 
-h2 {
-  position: absolute;
-  top: 3.5em;
-  font-size: 3vh;
-  line-height: 20vh;
-  margin: 0 auto;
-  width: 100%; }
+.seize-reason-good {
+  border-bottom-color: #FF00FF; }
 
-h3 {
-  font-size: 4em;
-  line-height: 1.2em; }
+.good-time {
+  background-color: #9B12FE; }
 
-h4 {
-  font-size: 2em;
-  margin-bottom: .5em; }
+.flowchart {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin-top: 6em; }
 
-p, li {
-  font-size: 1.5em;
-  line-height: 1.2em; }
+.flowchart-cell {
+  line-height: 1.3em;
+  padding: 1em;
+  font-size: 1.2em;
+  border: 2px solid #FFF;
+  flex: 2; }
+
+.flowchart-arrow {
+  background-color: #FFF;
+  height: 2px;
+  flex: 1; }
 
 /*# sourceMappingURL=style.css.map */
