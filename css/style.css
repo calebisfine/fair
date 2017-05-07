@@ -72,7 +72,8 @@ header, section, footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  overflow-x: hidden; }
 
 h1, h3, h4 {
   font-family: larish-alte, serif; }
@@ -106,6 +107,31 @@ p, li {
   font-size: 1.5em;
   line-height: 1.4em; }
 
+.credit {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: .5em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: .2em;
+  color: #FFF;
+  text-decoration: none;
+  font-size: .8em;
+  opacity: .8;
+  transition: transform 200ms ease, opacity 200ms ease; }
+
+.credit:hover {
+  opacity: 1; }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(2em);
+  transition: transform 200ms ease, opacity 200ms ease; }
+
+.fadeInBlock {
+  opacity: 0;
+  display: block; }
+
 header {
   justify-content: top; }
 
@@ -119,7 +145,84 @@ header {
   background-image: url(../img/hand-raised.jpg);
   background-size: cover;
   background-position: center;
-  color: #9B12FE; }
+  color: #9B12FE;
+  position: relative; }
+
+.counter-widget {
+  position: absolute;
+  min-width: 600px;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: .3em;
+  z-index: 999;
+  padding: 6em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%); }
+
+.dim-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998; }
+
+.counter-controls {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em; }
+
+.counter-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  color: #FFF;
+  line-height: 120px;
+  text-align: center;
+  cursor: pointer; }
+
+.man .counter-button {
+  background-color: #5A00FF; }
+
+.not-man .counter-button {
+  background-color: #FF00FF; }
+
+.counter-chart {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #eee; }
+
+.circles-text {
+  display: none; }
+
+.man-count, .non-man-count {
+  margin-top: 1em; }
+
+.close-x {
+  stroke: #999;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-width: 5; }
+
+.counter-close {
+  width: 20px;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  cursor: pointer; }
+
+.counter-reset {
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  color: #999;
+  cursor: pointer; }
 
 .intro-stat {
   padding: 2em;
@@ -142,10 +245,10 @@ header {
 
 @-webkit-keyframes volunteer {
   to {
-    stroke-dashoffset: 345; } }
+    stroke-dashoffset: 320; } }
 @keyframes volunteer {
   to {
-    stroke-dashoffset: 345; } }
+    stroke-dashoffset: 320; } }
 @keyframes donutrotate {
   to {
     transform: rotate(-90deg); } }
@@ -192,7 +295,7 @@ header {
 .why-intro {
   background-color: #FFF;
   min-height: 0;
-  height: 50vh;
+  height: 100vh;
   color: #9B12FE; }
 
 .why-illustrations {
@@ -201,19 +304,30 @@ header {
   align-items: stretch; }
 
 .why-legos, .why-dollhouse {
-  flex: 1; }
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: 90%; }
 
 .why-legos {
-  background-color: #5A00FF; }
+  background-color: #112222;
+  background-image: url("../img/socialization-masc.svg");
+  background-position: center left; }
 
 .why-dollhouse {
-  background-color: #FF00FF; }
+  background-color: #FF00FF;
+  background-image: url("../img/socialization-femme.svg");
+  background-position: center right; }
 
 .why-outro {
   background-color: #9B12FE;
   color: #FFF;
   min-height: 0;
-  height: 50vh; }
+  height: 100vh; }
+
+.seize {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; }
 
 .ball {
   width: 20px;
@@ -225,8 +339,7 @@ header {
 
 .seize-reasons {
   margin-top: 4em;
-  max-width: 750px;
-  background-color: yellow; }
+  max-width: 750px; }
 
 .seize-reason-container {
   display: block;

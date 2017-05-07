@@ -21,7 +21,7 @@
                     to Fair<br>
                     Discussions
                 </h1>
-                <h2>
+                <h2 class="fadeInBlock">
                     Recognizing and avoiding<br>
                     misogyny + racism<br>
                     in the workplace, classroom,<br>
@@ -31,11 +31,11 @@
 		</header>
 		
 		<section class="intro">
-            <div class="blurb">
-                <h4>Life is Unfair</h4>
+            <div class="blurb fadeInBlock">
+                <h4>Sexism is Real</h4>
                 <p class="section-intro">Straight, white, cisgender men speak louder and more often than their peers of other genders and identities.</p>
             </div>
-            <div class="intro-stat">
+            <div class="intro-stat fadeInBlock">
                 <div class="donut-chart volunteer">
                     <svg class="donut-chart-svg" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                      <g>
@@ -47,14 +47,36 @@
                 </div>
                 <div class="chart-info">
                     <p class="chart-description">Men are 50% more likely than women to volunteer at least one comment during a college class.</p>
-                    <a class="chart-button" id="chart-buttot">See for Yourself</a>
+                    <a class="chart-button" id="chart-button">Test This</a>
                 </div>
+<!--                <div class="dim-background"></div>-->
+                <div class="counter-widget">
+                    <h4>Who's talking?</h4>
+                    <p>Use this counter in your class, meeting, or panel discussion.</p>
+                    <div class="counter-controls">
+                        <div class="man">
+                            <div class="counter-button">a man</div>
+                            <div class="man-count">0 Contributions</div>
+                        </div>
+                        <div class="circle counter-chart" id="circles-1">
+                        </div>
+                        <div class="not-man">
+                            <div class="counter-button">not a man</div>
+                            <div class="non-man-count">0 Contributions</div>
+                        </div>
+                    </div>
+                    <span class="counter-reset">Reset</span>
+                    <svg class="counter-close" viewbox="0 0 40 40">
+                        <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+                    </svg>
+                </div>
+                <a id="intro-credit" class="credit hidden" href="http://www.law.harvard.edu/students/experiences/ExecutiveSummary.pdf">Harvard Law School</a>
             </div>
 		</section>
 		<section class="examples">
             <div class="examples-blurb">
-                <h4 class="examples-heading">Other Microagressions</h4>
-                <ul class="examples-list">
+                <h4 class="examples-heading fadeInBlock">Other Microagressions</h4>
+                <ul class="examples-list fadeInBlock">
                     <li class="examples-item"><span class="examples-keyword">Racing to answer</span> a question first without giving others an opportunity</li>
                     <li class="examples-item"><span class="examples-keyword">Receiving praise</span> for an answer or observation that someone else already shared</li>
                     <li class="examples-item"><span class="examples-keyword">Offering advice</span> or opinions without being asked</li>
@@ -62,9 +84,10 @@
                     <li class="examples-item"><span class="examples-keyword">Avoiding </span>talking to someone because you can’t pronounce their name or understand their accent</li>
                 </ul>
             </div>
+            <a id="examples-credit" class="credit hidden" href="https://www.bitchmedia.org/post/seven-studies-proving-mansplaining-exists">Bitch Media</a>
 		</section>
 		<section class="why-intro">
-            <div class="blurb">
+            <div class="blurb fadeInBlock">
                 <h4>Why does this happen?</h4>
                 <p class="section-intro">Our strengths, challenges, and personalities depend on the opportunities and experiences we are given access to:</p>
             </div>
@@ -74,23 +97,24 @@
             </div>
             <div class="why-dollhouse">
             </div>
+            <a id="why-credit" class="credit hidden" href="#">CODE: Debugging the Gender Gap</a>
 		</section>
 		<section class="why-outro">
-            <div class="blurb">
+            <div class="blurb fadeInBlock">
                 <h4>What can be done?</h4>
-                <p class="section-intro">As a group facilitator, or a member with relative privilege, ask yourself these questions before adding to the conversation:</p>
+                <p class="section-intro">As a group facilitator, or a peer with more privilege than others, ask yourself these questions before adding to the conversation:</p>
             </div>
 		</section>
 		<section class="seize">
-                <h3>Why are you seizing<br> this moment?</h3>
+                <h3 class="fadeInBlock">Why are you seizing<br> this moment?</h3>
                 <div class="ball"></div>
 		</section>
         <section class="seize-content">
-            <div class="blurb">
+            <div class="blurb fadeInBlock">
                 <h4>Why are you<br>sezing this moment?</h4>
                 <p class="section-intro">When you feel comeplled to<br> interupt or add to a conversation, <br>ask yourself why:</p>
             </div>
-            <div class="seize-reasons">
+            <div class="seize-reasons fadeInBlock">
                 <div class="seize-reason-container">
                     <p class="seize-reason seize-reason-bad">
                         I'm an expert and it feels good to be right.
@@ -104,11 +128,11 @@
             </div>
 		</section>
         <section class="good-time">
-            <div class="blurb">
+            <div class="blurb fadeInBlock">
                 <h4>Is now a good time?</h4>
                 <p class="section-intro">Before speaking, make sure someone else isn’t being ignored &mdash; especially if their experience with the topic is more relevant than yours.</p>
             </div>
-            <div class="flowchart">
+            <div class="flowchart fadeInBlock">
             <div class="flowchart-cell">Does this need to be said?</div>
             <div class="flowchart-arrow"></div>
             <div class="flowchart-cell">Does this need to be said by ME?</div>
@@ -128,8 +152,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pleasejs/0.4.2/Please.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script src="js/scripts.js"></script>
+    <script src="js/circles.js"></script>
     <script src="js/balls.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/scripts.js"></script>
+
 
 </body>
 
