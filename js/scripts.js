@@ -77,12 +77,85 @@ $('.counter-close').click(function(){
         var bottom_of_window = $(window).scrollTop() + $(window).height();
 
         /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
-        bottom_of_window = bottom_of_window;  
+        bottom_of_window = bottom_of_window + 100;  
 
         if( bottom_of_window > bottom_of_object ){
             $(this).animate({'opacity':'1'},600);
         }
     }); 
+});
+
+
+// Config Lunar to Select SVG Classes
+var svg = document.querySelector('#circle');
+
+// Waypoints Implementation for Credits
+
+$('#intro').waypoint(function(direction) {
+//	$('.credit').removeClass('hidden');
+	if (direction == 'down') {
+			$('#intro-credit').removeClass('hidden');
+            lunar.addClass(svg, 'circle_animation');
+//            $('#circle-bg').addClass('circle_animation-bg');
+	} else {
+			$('#intro-credit').addClass('hidden');
+	}
+//	$('.slowshow').fadeIn(1000);
+}, {
+    offset: '40%'
+});
+
+$('.examples').waypoint(function(direction) {
+//	$('.credit').removeClass('hidden');
+	if (direction == 'down') {
+            $('.credit').addClass('hidden');
+			$('#examples-credit').removeClass('hidden');
+	} else {
+            $('#intro-credit').removeClass('hidden');
+			$('#examples-credit').addClass('hidden');
+	}
+//	$('.slowshow').fadeIn(1000);
+}, {
+    offset: '50%'
+});
+
+$('.why-intro').waypoint(function(direction) {
+//	$('.credit').removeClass('hidden');
+	if (direction == 'down') {
+            $('.credit').addClass('hidden');
+			$('#why-credit').removeClass('hidden');
+	} else {
+            $('#examples-credit').removeClass('hidden');
+			$('#why-credit').addClass('hidden');
+	}
+//	$('.slowshow').fadeIn(1000);
+}, {
+    offset: '50%'
+});
+
+$('.why-outro').waypoint(function(direction) {
+//	$('.credit').removeClass('hidden');
+	if (direction == 'down') {
+            $('.credit').addClass('hidden');
+	} else {
+            $('#why-credit').removeClass('hidden');
+	}
+//	$('.slowshow').fadeIn(1000);
+}, {
+    offset: '50%'
+});
+
+$('.good-time').waypoint(function(direction) {
+//	$('.credit').removeClass('hidden');
+	if (direction == 'down') {
+            $('.credit').addClass('hidden');
+			$('#good-time-credit').removeClass('hidden');
+	} else {
+			$('#good-time-credit').addClass('hidden');
+	}
+//	$('.slowshow').fadeIn(1000);
+}, {
+    offset: '50%'
 });
     
 //});

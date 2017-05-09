@@ -125,7 +125,7 @@ p, li {
 
 .hidden {
   opacity: 0;
-  transform: translateY(2em);
+  transform: translateY(4em);
   transition: transform 200ms ease, opacity 200ms ease; }
 
 .fadeInBlock {
@@ -184,7 +184,15 @@ header {
   color: #FFF;
   line-height: 120px;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.counter-button:hover {
+  transform: scale(1.1, 1.1); }
+
+.counter-button:active {
+  transform: scale(0.5, 0.5); }
 
 .man .counter-button {
   background-color: #5A00FF; }
@@ -195,8 +203,7 @@ header {
 .counter-chart {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  background-color: #eee; }
+  border-radius: 50%; }
 
 .circles-text {
   display: none; }
@@ -267,7 +274,12 @@ header {
   padding: .5em;
   border: 1px solid #5A00FF;
   border-radius: .3em;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: color 200ms ease, border 200ms ease; }
+
+.chart-button:hover {
+  border-color: #FF00FF;
+  color: #FF00FF; }
 
 .examples {
   background-color: #5A00FF; }

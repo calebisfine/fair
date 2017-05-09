@@ -156,6 +156,16 @@ header {
     line-height: 120px;
     text-align: center;
     cursor: pointer;
+     -webkit-transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition:          transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.counter-button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.counter-button:active {
+    transform: scale(.5, .5);
 }
 
 .man .counter-button {
@@ -170,7 +180,6 @@ header {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #eee;
 }
 
 .circles-text {
@@ -263,6 +272,12 @@ header {
     border: 1px solid $cobalt;
     border-radius: .3em;
     cursor: pointer;
+    transition: color 200ms ease, border 200ms ease;
+}
+
+.chart-button:hover {
+    border-color: $pink;
+    color: $pink;
 }
 
 // Examples

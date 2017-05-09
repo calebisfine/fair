@@ -30,7 +30,7 @@
             </div>
 		</header>
 		
-		<section class="intro">
+		<section class="intro" id="intro">
             <div class="blurb fadeInBlock">
                 <h4>Sexism is Real</h4>
                 <p class="section-intro">Straight, white, cisgender men speak louder and more often than their peers of other genders and identities.</p>
@@ -40,8 +40,8 @@
                     <svg class="donut-chart-svg" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                      <g>
                       <title>Layer 1</title>
-                      <circle id="circle-bg" class="circle_animation-bg" r="60" cy="81" cx="81" stroke-width="18" stroke="#5A00FF" fill="none"/>   
-                      <circle id="circle" class="circle_animation" r="60" cy="81" cx="81" stroke-width="18" stroke="#FF00FF" fill="none"/>
+                      <circle id="circle-bg" class="circle_animation_bg" r="60" cy="81" cx="81" stroke-width="18" stroke="#5A00FF" fill="none"/>   
+                      <circle id="circle" class="" r="60" cy="81" cx="81" stroke-width="18" stroke="#FF00FF" fill="none"/>
                      </g>
                     </svg>
                 </div>
@@ -133,12 +133,13 @@
                 <p class="section-intro">Before speaking, make sure someone else isn’t being ignored &mdash; especially if their experience with the topic is more relevant than yours.</p>
             </div>
             <div class="flowchart fadeInBlock">
-            <div class="flowchart-cell">Does this need to be said?</div>
-            <div class="flowchart-arrow"></div>
-            <div class="flowchart-cell">Does this need to be said by ME?</div>
-            <div class="flowchart-arrow"></div>
-            <div class="flowchart-cell">Does this need to be said by me NOW?</div>
+                <div class="flowchart-cell">Does this need to be said?</div>
+                <div class="flowchart-arrow"></div>
+                <div class="flowchart-cell">Does this need to be said by ME?</div>
+                <div class="flowchart-arrow"></div>
+                <div class="flowchart-cell">Does this need to be said by me NOW?</div>
             </div>
+            <a id="good-time-credit" class="credit hidden" href="#">Craig Fergusen</a>
         </section>
 		
         
@@ -153,6 +154,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="js/circles.js"></script>
+    <script src="js/lunar.js"></script>
     <script src="js/balls.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/scripts.js"></script>

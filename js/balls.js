@@ -63,7 +63,6 @@ copy(".ball", numBalls);
       var posx = Math.random() * 100;
       var posy = Math.random() * 95;
       var randColor = Math.floor(Math.random() * 10);
-    console.log(randColor);
       $(this).css({ 
         'position':'absolute',
         'left': posx + '%',
