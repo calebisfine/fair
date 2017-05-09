@@ -157,5 +157,17 @@ $('.good-time').waypoint(function(direction) {
 }, {
     offset: '50%'
 });
+
+$('.kind').waypoint(function(direction) {
+//	$('.credit').removeClass('hidden');
+	if (direction == 'down') {
+            $('.credit').addClass('hidden');
+	} else {
+            $('#good-time-credit').removeClass('hidden');
+	}
+//	$('.slowshow').fadeIn(1000);
+}, {
+    offset: '50%'
+});
     
 //});
