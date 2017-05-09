@@ -125,7 +125,7 @@ p, li {
 
 .hidden {
   opacity: 0;
-  transform: translateY(4em);
+  transform: translateY(2em);
   transition: transform 200ms ease, opacity 200ms ease; }
 
 .fadeInBlock {
@@ -145,6 +145,7 @@ header {
   background-image: url(../img/hand-raised.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #9B12FE;
   position: relative; }
 
@@ -308,7 +309,11 @@ header {
   background-color: #FFF;
   min-height: 0;
   height: 100vh;
-  color: #9B12FE; }
+  color: #9B12FE;
+  background-image: url("../img/legos.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
 
 .why-illustrations {
   flex-direction: row;
@@ -365,10 +370,12 @@ header {
   font-size: 1.2em;
   line-height: 1.6em;
   color: #FFF;
-  border-bottom: 1px solid #5A00FF; }
+  border-bottom: 1px solid #5A00FF;
+  cursor: url(../img/zip-cursor.png), auto; }
 
 .seize-reason-good {
-  border-bottom-color: #FF00FF; }
+  border-bottom-color: #FF00FF;
+  cursor: url(../img/hug-cursor.png), auto; }
 
 .good-time {
   background-color: #9B12FE; }

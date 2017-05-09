@@ -110,6 +110,7 @@ header {
     background-image: url(../img/hand-raised.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     color: $violet;
     position: relative;
 }
@@ -318,6 +319,10 @@ header {
     min-height: 0;
     height: 100vh;
     color: $violet;
+    background-image: url('../img/legos.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .why-illustrations {
@@ -387,10 +392,12 @@ header {
     line-height: 1.6em;
     color: $white;
     border-bottom: 1px solid $cobalt;
+    cursor: url(../img/zip-cursor.png), auto;
 }
 
 .seize-reason-good {
     border-bottom-color: $pink;
+    cursor: url(../img/hug-cursor.png), auto;
 }
 
 // Good time
